@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Proposta executiva de revisão da meta 2026 do Programa de Fortalecimento de Redes: duas metas distintas para resultado em WhatsApp e ciclos de intervenção.">
+  <title>Fortalecimento de Redes 2026 — proposta de meta</title>
+  <style>
+    :root{
+      --navy:#102a43;--deep:#0b2032;--blue:#246dd0;--cyan:#32b6e6;--teal:#087e83;
+      --ink:#192f43;--muted:#526577;--line:#d8e3ed;--paper:#f4f7fb;--white:#fff;
+      --pale:#eaf2fd;--soft:#e9f5f5;--amber:#805713;--amber-bg:#fff6e5;
+      --red:#9f3026;--red-bg:#fff0ed;--green:#26734d;--green-bg:#eaf7f0;--radius:15px
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.6 "Segoe UI",Inter,Arial,sans-serif}
+    h1,h2,h3,p,figure{margin-top:0} h1,h2,h3{color:var(--navy);line-height:1.16;letter-spacing:-.025em}
+    h1{font-size:clamp(2.1rem,3.5vw,3.65rem);margin-bottom:20px}
+    h2{font-size:clamp(1.65rem,2.7vw,2.35rem);margin-bottom:15px;max-width:960px}
+    h3{font-size:1.16rem;line-height:1.3;margin-bottom:12px} p{margin-bottom:16px}
+    a{color:#175db4;text-underline-offset:4px} button,input{font:inherit}
+    button,.button{border:1px solid var(--line);border-radius:8px;padding:9px 14px;cursor:pointer;background:white;color:var(--navy);font-size:14px;font-weight:650;text-decoration:none}
+    button:hover,.button:hover{border-color:var(--blue);background:var(--pale)}
+    :focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+    .skip{position:fixed;top:-100px;left:16px;z-index:20;padding:12px;background:white}.skip:focus{top:12px}
+    .topbar{padding:18px max(24px,calc((100vw - 1480px)/2));background:var(--navy);color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .brand{font-size:14px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}.brand span{color:#66d3fa}.edition{font-size:13px;color:#c5d7e8}
+    .layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:38px;max-width:1480px;margin:0 auto;padding:34px 28px 70px}
+    .sidebar{align-self:start;position:sticky;top:22px}.nav-label,.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+    .nav-label{color:var(--muted);padding:0 12px;margin:4px 0 14px}.sidebar nav{display:flex;flex-direction:column;gap:4px}
+    .sidebar nav a{color:var(--muted);text-decoration:none;font-size:14px;padding:9px 12px;border-radius:8px;line-height:1.35;border-left:3px solid transparent}
+    .sidebar nav a:hover,.sidebar nav a[aria-current="location"]{color:var(--navy);background:#e3edf8;border-left-color:var(--blue)}
+    .sidebar nav a.new{color:#086f75;font-weight:700}.nav-rule{height:1px;background:var(--line);margin:10px 12px}
+    .nav-bottom{margin-top:24px;padding:16px 12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+    main{min-width:0}.hero{padding:40px;background:var(--navy);color:white;border-radius:20px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:36px;align-items:center}.hero h1{color:white}.hero .eyebrow{color:#67d4fb;margin-bottom:22px}
+    .hero p{font-size:18px;color:#d1e2f0;line-height:1.55}.hero .meta{font-size:13px;margin:22px 0 0;color:#b5ccdf}
+    .hero-number{border-left:1px solid #446077;padding-left:28px}.hero-number .num{font-size:clamp(4.4rem,6.8vw,6.8rem);font-weight:800;letter-spacing:-.07em;line-height:1;color:#fff}
+    .hero-number .unit{font-size:20px;color:#67d4fb;margin:9px 0}.hero-number p{font-size:14px;margin:0}
+    .hero-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero-links a{border:1px solid #7297b4;padding:9px 14px;border-radius:8px;font-size:14px;font-weight:650;text-decoration:none;color:white}
+    .hero-links a:first-child{color:var(--navy);background:#fff;border-color:#fff}
+    section{padding-top:55px;scroll-margin-top:24px}.eyebrow{color:var(--blue);margin-bottom:12px}.lede{font-size:18px;color:var(--muted);max-width:980px;line-height:1.6}
+    .small,.source,.caption{font-size:13px;color:var(--muted);line-height:1.55}.source{margin:14px 0 0}.caption{margin:12px 0 0}
+    .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .panel{background:#fff;border:1px solid var(--line);padding:24px;border-radius:var(--radius);min-width:0}.panel p:last-child{margin-bottom:0}.panel.accent{border-top:4px solid var(--blue)}.panel.final{border-top:4px solid var(--teal)}
+    .stat{font-size:clamp(2.35rem,4.2vw,3.5rem);font-weight:780;line-height:1.05;letter-spacing:-.045em;font-variant-numeric:tabular-nums;color:var(--navy)}
+    .stat.blue{color:var(--blue)}.stat.teal{color:var(--teal)}.stat.amber{color:var(--amber)}.stat-label{font-size:15px;line-height:1.4;color:var(--muted);margin:10px 0 0}.stat-note{font-size:14px;margin-top:18px;color:var(--muted)}
+    .callout{padding:20px 23px;border-left:4px solid var(--blue);background:var(--pale);border-radius:0 12px 12px 0;margin:22px 0}.callout.teal{background:var(--soft);border-color:var(--teal)}.callout.amber{background:var(--amber-bg);border-color:#c68a20}.callout p:last-child{margin-bottom:0}
+    .note{padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:14px;color:var(--muted);margin:18px 0}.note strong{color:var(--ink)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:white}table{border-collapse:collapse;width:100%;font-size:15px}
+    th,td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px;line-height:1.35;text-transform:uppercase;letter-spacing:.025em;background:#eff4f9;font-weight:750}
+    tbody tr:last-child td{border-bottom:0}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}td.num{font-weight:680}.total td{background:var(--pale);font-weight:750}.highlight td{background:#eef8f8}
+    .formula{padding:22px 25px;background:var(--deep);border-radius:12px;color:#eef6ff;font:500 16px/1.75 ui-monospace,SFMono-Regular,Consolas,monospace;margin:20px 0;overflow-wrap:anywhere}
+    .formula-title{display:block;color:#7fdfff;font-family:"Segoe UI",Arial,sans-serif;font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px}.main-equation{display:block;font-size:clamp(1.15rem,2.2vw,1.75rem);font-weight:700;line-height:1.55}.sub{display:block;font-size:14px;color:#c1d9ec;margin-top:8px}
+    .process{background:white;border:1px solid var(--line);border-radius:15px;padding:27px}.process ol{list-style:none;margin:0;padding:0;counter-reset:process}
+    .process li{display:grid;grid-template-columns:42px 185px minmax(0,1fr);gap:16px;padding:0 0 22px;position:relative;counter-increment:process}.process li::before{content:counter(process,decimal-leading-zero);height:37px;width:37px;display:grid;place-items:center;border-radius:50%;background:var(--pale);border:1px solid #b7cde2;color:var(--blue);font-size:13px;font-weight:800;z-index:1}
+    .process li:not(:last-child)::after{content:"";position:absolute;left:18px;top:37px;bottom:0;width:2px;background:#b7cde2}.process li h3{font-size:16px;line-height:1.35;margin:5px 0}.process li p{font-size:15px;margin:3px 0;color:var(--muted)}.process li:last-child{padding-bottom:0}.process li.result::before{background:var(--navy);color:white;border-color:var(--navy)}
+    .split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;list-style:none;padding:0;margin:25px 0}.split li{padding:28px;border:1px solid var(--line);background:white;position:relative}.split li:first-child{border-radius:13px 0 0 13px}.split li:last-child{border-radius:0 13px 13px 0;background:var(--soft);border-color:#b8d6d6}.split li+li{border-left:0}.split li+li::before{content:"+";position:absolute;left:-15px;top:48px;background:var(--navy);color:#fff;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;font-weight:750;z-index:1}.split .points{font-size:48px;font-weight:790;line-height:1;color:var(--navy)}.split .points small{font-size:15px;font-weight:500}
+    .bars .bar-row{display:grid;grid-template-columns:230px minmax(0,1fr) 54px;align-items:center;gap:14px;margin:17px 0}.bar-name{font-size:15px;font-weight:650}.track{height:28px;background:#eaf0f6;border-radius:5px;overflow:hidden}.fill{height:100%;min-width:3px;background:var(--blue);border-radius:4px}.fill.teal{background:var(--teal)}.fill.navy{background:var(--navy)}.fill.amber{background:#d89a2b}.bar-value{text-align:right;font-size:21px;font-weight:750;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+    .simulator{border-top:4px solid var(--teal);padding:28px}.calc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.calc-field{--stage-color:var(--blue);border:1px solid var(--line);border-top:3px solid var(--stage-color);border-radius:10px;padding:17px;background:#f8fbff;min-width:0}.calc-field.factory{--stage-color:var(--cyan)}.calc-field.traffic{--stage-color:var(--teal)}.calc-field.weeks{--stage-color:var(--navy)}.calc-field label{font-weight:650;font-size:15px;display:block;margin-bottom:10px}.calc-field input{width:100%;padding:8px 12px;border:1px solid #99b1c7;border-radius:8px;background:white;color:var(--navy);font-size:28px;font-weight:700;font-variant-numeric:tabular-nums}.calc-field small{display:block;color:var(--muted);font-size:13px;margin-top:8px;line-height:1.45}
+    .calc-output{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line);padding-top:25px;margin-top:22px}.calc-output output{display:block;font-size:clamp(3rem,5vw,4.5rem);font-weight:780;line-height:1.1;color:var(--teal);letter-spacing:-.04em}.calc-output dl{margin:0;font-size:15px}.calc-output dl div{display:flex;gap:16px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}.calc-output dd{margin:0;font-weight:750;white-space:nowrap}.calc-status{padding:11px 15px;background:var(--soft);color:#096269;border-radius:7px;font-size:14px;font-weight:650;margin-top:18px}
+    .final-plea{padding:34px;background:var(--navy);color:white;border-radius:16px;margin-top:10px}.final-plea h2,.final-plea h3{color:white}.final-plea .eyebrow{color:#72d7fa}.final-plea p{color:#d7e6f3;font-size:18px}.final-plea strong{color:white}.plea-list{list-style:none;margin:25px 0;padding:0;border-top:1px solid #496277}.plea-list li{display:grid;grid-template-columns:185px minmax(0,1fr);gap:18px;border-bottom:1px solid #496277;padding:14px 0;font-size:16px}.plea-list span{color:#bed1e1}.final-plea .close{font-size:21px;margin:25px 0 0;line-height:1.45;color:white}
+    details{background:#fff;border:1px solid var(--line);border-radius:11px;margin:13px 0;overflow:hidden}summary{list-style:none;cursor:pointer;font-size:16px;line-height:1.4;font-weight:700;color:var(--navy);padding:18px 48px 18px 20px;position:relative}summary::-webkit-details-marker{display:none}summary::after{content:"+";position:absolute;right:20px;top:15px;font-size:24px;color:var(--blue)}details[open]>summary::after{content:"−"}details[open]>summary{border-bottom:1px solid var(--line)}.detail-body{padding:22px}.detail-body ul{padding-left:23px;margin:12px 0}.detail-body li{margin:8px 0}
+    footer{padding:35px 0 0;color:var(--muted);font-size:13px}
+    @media(max-width:1000px){.layout{grid-template-columns:1fr}.sidebar{display:none}.grid4,.calc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:1fr}.hero-number{border-left:0;border-top:1px solid #446077;padding:24px 0 0}.grid3{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.layout{padding:20px 15px 45px}.hero{padding:28px 22px}.grid2,.grid3,.grid4,.calc-grid,.calc-output{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split li:first-child,.split li:last-child{border-radius:12px}.split li+li{border-left:1px solid var(--line);border-top:0}.split li+li::before{content:"+";left:calc(50% - 15px);top:-15px}.process li{grid-template-columns:42px 1fr}.process li p{grid-column:2}.bars .bar-row{grid-template-columns:1fr 45px}.bars .track{grid-column:1/3}.topbar{align-items:flex-start;flex-direction:column}.plea-list li{grid-template-columns:1fr;gap:2px}}
+    @media print{body{background:white}.topbar,.sidebar,.hero-links{display:none}.layout{display:block;max-width:none;padding:0}.hero{border-radius:0}.panel,.process,.table-wrap,details{break-inside:avoid}section{padding-top:30px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar"><div class="brand">Instituto <span>Libertas</span> · Fortalecimento de Redes</div><div class="edition">Proposta para decisão · 16/09/2026</div></header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navegação da proposta">
+      <div class="nav-label">Nesta página</div>
+      <nav>
+        <a href="#sintese">Síntese</a><a href="#problema">O problema</a><a href="#evidencias">Evidências</a>
+        <a href="#proposta" class="new">Nova composição</a><a href="#ciclo" class="new">Ciclo completo</a><a href="#carteira">Carteira e baseline</a>
+        <a href="#formula">Fórmula</a><a href="#governanca">Governança</a><a href="#simulador">Simulador</a><a href="#decisao">Decisão proposta</a><a href="#anexos">Notas metodológicas</a>
+      </nav>
+      <div class="nav-bottom">Dados de redes: 14/09/2026.<br>Baseline operacional: 16/09/2026.</div>
+    </aside>
+    <main id="conteudo">
+      <header class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Revisão da meta 2026</div>
+            <h1>Como medir o que o programa consegue transformar?</h1>
+            <p>A proposta preserva a ambição de fortalecer redes, mas separa um resultado de comunidade já demonstrado de uma entrega operacional diretamente gerenciável pelo programa.</p>
+            <div class="hero-links"><a href="#proposta">Ver proposta</a><a href="#simulador">Simular capacidade</a></div>
+            <p class="meta">Período final do indicador original: 05/09 a 03/10/2026 · blocos consecutivos de sete dias, início inclusivo e fim exclusivo.</p>
+          </div>
+          <div class="hero-number"><div class="num">2</div><div class="unit">metas distintas</div><p>WhatsApp e ciclos de intervenção, cada uma com objeto, regra e prestação de contas próprios.</p></div>
+        </div>
+      </header>
+
+      <section id="sintese">
+        <div class="eyebrow">Síntese executiva</div>
+        <h2>O WhatsApp demonstra avanço. A outra meta deve medir uma entrega que o programa consegue gerenciar.</h2>
+        <p class="lede">O Instagram mostrou baixa responsividade histórica e baixa atribuição ao programa. Por isso, a revisão separa duas metas: uma de resultado comprovado no WhatsApp e outra de ciclos de intervenção concluídos com evidência.</p>
+        <ul class="split" aria-label="Composição proposta">
+          <li><div class="points">15 <small>p.p.</small></div><h3>WhatsApp</h3><p>Evolução média de nível, mantendo a regra de apuração já definida.</p></li>
+          <li><div class="points">15 <small>p.p.</small></div><h3>Ciclos de intervenção</h3><p>Diagnóstico convertido em uma intervenção priorizada, concluída e comprovada.</p></li>
+        </ul>
+        <div class="callout teal"><p><strong>Recomendação:</strong> manter Instagram como subindicador estratégico de acompanhamento — posts, interações, eficiência, crescimento e níveis — sem torná-lo, sozinho, condição de entrega dos 15 p.p. operacionais.</p></div>
+      </section>
+
+      <section id="problema">
+        <div class="eyebrow">Por que revisar</div>
+        <h2>O Instagram é um bom diagnóstico, mas uma meta frágil para cobrar o desempenho do programa.</h2>
+        <div class="grid3">
+          <article class="panel accent"><h3>Baixa responsividade</h3><p>O histórico mostra pouca mudança de nível mesmo quando aumentam a frequência de posts e as interações absolutas.</p></article>
+          <article class="panel accent"><h3>Baixa atribuição</h3><p>O resultado depende fortemente do comportamento do candidato, do conteúdo publicado, da audiência acumulada e da distribuição da plataforma.</p></article>
+          <article class="panel accent"><h3>Esforço não observado</h3><p>Planos, diagnóstico, Fábrica, banho de loja e solução de tráfego podem ser entregues sem produzir, no mesmo período, uma mudança de nível orgânico.</p></article>
+        </div>
+        <div class="callout"><p><strong>Questão de atribuição:</strong> o programa orienta, oferece ferramentas e resolve gargalos, mas não administra diretamente a rede do candidato. Se fosse responsável pela operação diária do perfil, o resultado orgânico seria uma cobrança mais aderente. No desenho atual, fatores externos ao programa têm peso maior do que sua própria execução.</p></div>
+      </section>
+
+      <section id="evidencias">
+        <div class="eyebrow">Evidências disponíveis</div>
+        <h2>O dado atual mostra duas trajetórias muito diferentes.</h2>
+        <div class="grid4">
+          <article class="panel"><div class="stat blue">0,0187</div><p class="stat-label">evolução média de nível no Instagram</p></article>
+          <article class="panel"><div class="stat teal">1,6262</div><p class="stat-label">evolução média bruta de nível no WhatsApp</p></article>
+          <article class="panel"><div class="stat">71,4%</div><p class="stat-label">dos comparáveis aumentaram interações</p></article>
+          <article class="panel"><div class="stat amber">32,7%</div><p class="stat-label">do WhatsApp atualizado em até 14 dias</p></article>
+        </div>
+        <div class="table-wrap" style="margin-top:22px"><table>
+          <thead><tr><th>Subindicador</th><th class="num">Baseline</th><th class="num">Atual</th><th class="num">Evolução mediana</th><th>Leitura</th></tr></thead>
+          <tbody>
+            <tr><td>Interações semanais</td><td class="num">92,75</td><td class="num">158,00</td><td class="num">+58,50</td><td>crescimento absoluto, ainda distante do Nível 2</td></tr>
+            <tr><td>Posts semanais</td><td class="num">3,25</td><td class="num">6,00</td><td class="num">+2,50</td><td>produção aumentou</td></tr>
+            <tr><td>Interações por post</td><td class="num">44,33</td><td class="num">33,71</td><td class="num">+0,82</td><td>ganho individual mediano pequeno</td></tr>
+            <tr><td>Seguidores em 28 dias</td><td class="num">67</td><td class="num">32</td><td class="num">−16</td><td>desaceleração</td></tr>
+            <tr class="highlight"><td>Contatos no WhatsApp</td><td class="num">1</td><td class="num">105</td><td class="num">+92</td><td>resultado forte, embora com atualização desigual</td></tr>
+          </tbody>
+        </table></div>
+        <p class="source">Fonte: abas Painel e Subindicadores do KPI COM2, atualização de 14/09/2026.</p>
+        <div class="callout teal"><p><strong>Leitura:</strong> houve avanço em atividade, mas quase nenhuma resposta na escala de maturidade: a evolução média de nível ficou em 0,0187. O dado continua valioso para localizar gargalos e orientar intervenções, mas não oferece atribuição causal suficiente para sustentar uma meta de peso relevante.</p></div>
+      </section>
+
+      <section id="proposta">
+        <div class="eyebrow">Nova composição</div>
+        <h2>Duas metas distintas: resultado de comunidade e execução do produto.</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Componente</th><th>Peso no painel</th><th>Objeto medido</th><th>Regra central</th><th>Fonte</th></tr></thead>
+          <tbody>
+            <tr><td><strong>WhatsApp</strong></td><td>15 p.p.</td><td>evolução de nível por participante</td><td>mantém integralmente a regra de apuração já aprovada</td><td>relatórios dos monitores</td></tr>
+            <tr class="highlight"><td><strong>Ciclo de intervenção</strong></td><td>15 p.p.</td><td>gargalo priorizado e enfrentado por produto</td><td>ciclos concluídos ÷ ciclos aceitos e comprometidos</td><td>planilha de acompanhamento + evidência</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout teal"><p><strong>O que muda:</strong> sai uma cobrança de resultado pouco controlável e entra uma combinação entre resultado comprovado e entrega diretamente gerenciável. As duas metas são apuradas e apresentadas separadamente.</p></div>
+      </section>
+
+      <section id="ciclo">
+        <div class="eyebrow">Definição operacional</div>
+        <h2>Um ciclo completo começa no diagnóstico e termina em uma mudança comprovada.</h2>
+        <div class="process"><ol>
+          <li><h3>Diagnóstico válido</h3><p>Plano, checklist ou métricas identificam um gargalo verificável.</p></li>
+          <li><h3>Priorização e oferta</h3><p>Uma intervenção principal é indicada e oferecida à pessoa: Fábrica, banho de loja ou atendimento de tráfego.</p></li>
+          <li><h3>Aceite e compromisso</h3><p>Somente após o aceite a pessoa entra na carteira comprometida e passa a compor o denominador da meta.</p></li>
+          <li><h3>Execução</h3><p>A equipe realiza a entrega acordada e registra responsável, início, conclusão e status.</p></li>
+          <li><h3>Evidência</h3><p>Link, registro de uso, antes/depois, ticket encerrado ou outro comprovante definido para a frente.</p></li>
+          <li class="result"><h3>Ciclo computado</h3><p>Somente quando a intervenção está implementada e a evidência foi aceita. Entrega parcial não vale um ciclo inteiro.</p></li>
+        </ol></div>
+        <div class="grid3" style="margin-top:20px">
+          <article class="panel"><h3>Fábrica de Conteúdo</h3><p><strong>Entrada:</strong> baixa frequência de posts.</p><p><strong>Conclusão:</strong> candidato ativado, conteúdo gerado e ao menos uma utilização comprovada.</p></article>
+          <article class="panel"><h3>Banho de loja</h3><p><strong>Entrada:</strong> falha estrutural crítica ou conjunto de falhas.</p><p><strong>Conclusão:</strong> itens priorizados alterados e antes/depois documentado.</p></article>
+          <article class="panel"><h3>Atendimento de tráfego</h3><p><strong>Entrada:</strong> impedimento documentado de impulsionamento.</p><p><strong>Conclusão:</strong> atendimento encerrado com solução, orientação aplicável ou impedimento externo formalizado.</p></article>
+        </div>
+      </section>
+
+      <section id="carteira">
+        <div class="eyebrow">Baseline operacional</div>
+        <h2>Já existe infraestrutura de diagnóstico; falta transformar a fila em uma carteira executável.</h2>
+        <div class="grid4">
+          <article class="panel"><div class="stat">280</div><p class="stat-label">pessoas acompanhadas no universo operacional</p></article>
+          <article class="panel"><div class="stat blue">110</div><p class="stat-label">planos entregues, comprovados por PDF</p></article>
+          <article class="panel"><div class="stat teal">71</div><p class="stat-label">checklists estruturais recuperados</p></article>
+          <article class="panel"><div class="stat amber">42</div><p class="stat-label">banhos de loja prioritários identificados</p></article>
+        </div>
+        <div class="bars panel" style="margin-top:22px">
+          <h3>Cobertura já consolidada</h3>
+          <div class="bar-row"><span class="bar-name">Planos entregues</span><div class="track"><div class="fill navy" style="width:39.3%"></div></div><span class="bar-value">110</span></div>
+          <div class="bar-row"><span class="bar-name">Checklists estruturados</span><div class="track"><div class="fill teal" style="width:25.4%"></div></div><span class="bar-value">71</span></div>
+          <div class="bar-row"><span class="bar-name">Banho prioritário</span><div class="track"><div class="fill amber" style="width:15%"></div></div><span class="bar-value">42</span></div>
+          <div class="bar-row"><span class="bar-name">Instagram com 4 blocos</span><div class="track"><div class="fill" style="width:91.4%"></div></div><span class="bar-value">256</span></div>
+        </div>
+        <div class="callout"><p><strong>Baseline de execução:</strong> ainda não há histórico consolidado de intervenções implementadas. Portanto, “zero” significa ausência de registro operacional comparável, não prova de que nenhuma ajuda tenha ocorrido.</p></div>
+        <p class="source">Fonte: consolidação Jornada + PCI + PDFs + fichas originais + blocos do Instagram, corte de 16/09/2026.</p>
+      </section>
+
+      <section id="formula">
+        <div class="eyebrow">Cálculo recomendado</div>
+        <h2>A carteira deve respeitar a capacidade real e considerar somente compromissos aceitos.</h2>
+        <div class="formula"><span class="formula-title">Capacidade de compromisso</span><span class="main-equation">Limite da carteira = capacidade semanal × semanas disponíveis</span><span class="sub">A lista de pessoas abordadas e seus resultados — aceite, recusa ou ausência de resposta — permanece registrada.</span></div>
+        <div class="formula"><span class="formula-title">Índice de ciclos</span><span class="main-equation">Índice = ciclos completos e validados ÷ ciclos aceitos e comprometidos</span><span class="sub">A pessoa só entra no denominador depois de aceitar a intervenção. Recusas e ausências são reportadas separadamente.</span></div>
+      </section>
+
+      <section id="governanca">
+        <div class="eyebrow">Proteções contra distorção</div>
+        <h2>Seis regras tornam a nova meta auditável e evitam seleção oportunista.</h2>
+        <div class="grid3">
+          <article class="panel"><h3>1. Fila inicial registrada</h3><p>CPF, gargalo, intervenção oferecida e resultado do contato são registrados para dar transparência à seleção.</p></article>
+          <article class="panel"><h3>2. Uma pessoa, um ciclo</h3><p>No período, cada participante conta no máximo uma vez, mesmo recebendo vários apoios.</p></article>
+          <article class="panel"><h3>3. Evidência obrigatória</h3><p>Status “entregue” sem comprovante não é computado como implementado.</p></article>
+          <article class="panel"><h3>4. Critério por produto</h3><p>Cada frente possui entrada, saída e evidência próprias, publicadas antes da apuração.</p></article>
+          <article class="panel"><h3>5. Compromisso exige aceite</h3><p>Recusa ou ausência de resposta é registrada, mas não entra na carteira comprometida nem no denominador dos ciclos.</p></article>
+          <article class="panel"><h3>6. Auditoria amostral</h3><p>Uma amostra das evidências é revisada por pessoa que não executou a intervenção.</p></article>
+        </div>
+      </section>
+
+      <section id="simulador">
+        <div class="eyebrow">Simulador de capacidade</div>
+        <h2>Quantos ciclos cabem no período?</h2>
+          <p class="lede">Preencha uma capacidade semanal realista. O simulador calcula o limite de compromissos que a equipe consegue assumir e concluir no período.</p>
+        <div class="panel simulator">
+          <div class="calc-grid">
+            <div class="calc-field weeks"><label for="weeks">Semanas disponíveis</label><input id="weeks" type="number" min="0" max="20" step="0.1" value="2.4"><small>De 16/09 a 03/10, aproximadamente.</small></div>
+            <div class="calc-field"><label for="bath">Banhos de loja/semana</label><input id="bath" type="number" min="0" max="200" step="1" value="0"><small>Fila prioritária conhecida: 42.</small></div>
+            <div class="calc-field factory"><label for="factory">Ativações da Fábrica/semana</label><input id="factory" type="number" min="0" max="200" step="1" value="0"><small>A fila será fechada pelo corte de posts.</small></div>
+            <div class="calc-field traffic"><label for="traffic">Atendimentos de tráfego/semana</label><input id="traffic" type="number" min="0" max="200" step="1" value="0"><small>A fila depende de registro operacional.</small></div>
+          </div>
+          <div class="calc-output">
+            <div><span class="small">Limite sugerido da carteira</span><output id="portfolio">0</output><p class="stat-label">compromissos aceitos</p></div>
+            <dl>
+              <div><dt>Banho de loja</dt><dd id="bath-out">0</dd></div><div><dt>Fábrica</dt><dd id="factory-out">0</dd></div><div><dt>Tráfego</dt><dd id="traffic-out">0</dd></div><div><dt>Para entregar 100%</dt><dd id="target-out">0 ciclos</dd></div>
+            </dl>
+          </div>
+          <div class="calc-status" id="calc-status">Informe a capacidade de pelo menos uma frente para construir a carteira.</div>
+        </div>
+      </section>
+
+      <section id="decisao">
+        <div class="final-plea">
+          <div class="eyebrow">Pleito para aprovação</div>
+          <h2>Substituir a metade de Instagram por uma meta de ciclos completos de intervenção.</h2>
+          <p>A revisão não reduz os 30% do painel. Ela troca uma cobrança pouco controlável por uma combinação entre resultado comprovado e entrega diretamente gerenciável.</p>
+          <ul class="plea-list">
+            <li><span>Meta 1 · 15 p.p.</span><strong>WhatsApp, mantendo a regra de apuração já definida.</strong></li>
+            <li><span>Meta 2 · 15 p.p.</span><strong>Ciclos completos, sobre compromissos aceitos e compatíveis com a capacidade.</strong></li>
+            <li><span>Instagram</span><strong>Permanece no painel como diagnóstico e conjunto de subindicadores estratégicos.</strong></li>
+          </ul>
+          <p class="close">A meta passa a responder a uma pergunta simples: <strong>quantas pessoas tiveram um gargalo identificado e efetivamente resolvido pelo programa?</strong></p>
+        </div>
+      </section>
+
+      <section id="anexos">
+        <div class="eyebrow">Notas metodológicas</div><h2>Definições para fechar antes da aprovação.</h2>
+        <details><summary>WhatsApp permanece sem mudança de regra</summary><div class="detail-body"><p>A revisão não propõe alteração na regra de apuração do WhatsApp. O componente passa a constituir uma meta própria, mantendo os critérios já definidos e aprovados.</p></div></details>
+        <details><summary>Instagram continua sendo monitorado</summary><div class="detail-body"><ul><li>mediana semanal de interações em quatro blocos consecutivos;</li><li>posts por semana;</li><li>interações e comentários por post;</li><li>crescimento de seguidores em 28 dias;</li><li>distribuição por níveis;</li><li>percentual de candidatos com melhora.</li></ul><p>Esses dados direcionam a carteira de intervenções e permitem avaliar efeito, sem transformar correlação em atribuição causal.</p></div></details>
+        <details><summary>Dados ainda necessários</summary><div class="detail-body"><ul><li>capacidade semanal real de cada frente;</li><li>fila nominal da Fábrica, usando o corte de posts acordado;</li><li>fila nominal de tráfego e critério de encerramento;</li><li>responsáveis e datas de cada ciclo;</li><li>evidência padronizada e responsável pela validação;</li><li>data oficial de congelamento da carteira.</li></ul></div></details>
+        <details><summary>Limitações do baseline</summary><div class="detail-body"><p>Dos 280 acompanhados, 110 têm plano entregue por PDF e 71 têm checklist estrutural consolidado. Há 42 casos classificados como banho prioritário e 17 para avaliação. Como a execução das intervenções ainda não possuía registro histórico padronizado, não é possível reconstruir com segurança quantos ciclos completos ocorreram antes do baseline.</p></div></details>
+      </section>
+      <footer>Documento de trabalho · Programa de Fortalecimento de Redes · Instituto Libertas · setembro de 2026</footer>
+    </main>
+  </div>
+  <script>
+    const byId = id => document.getElementById(id);
+    const fmt = n => new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0}).format(n);
+    function updateCalculator(){
+      const weeks=Math.max(0,Number(byId('weeks').value)||0);
+      const bath=Math.min(42,Math.round(Math.max(0,Number(byId('bath').value)||0)*weeks));
+      const factory=Math.round(Math.max(0,Number(byId('factory').value)||0)*weeks);
+      const traffic=Math.round(Math.max(0,Number(byId('traffic').value)||0)*weeks);
+      const total=bath+factory+traffic;
+      byId('bath-out').textContent=fmt(bath);byId('factory-out').textContent=fmt(factory);byId('traffic-out').textContent=fmt(traffic);
+      byId('portfolio').textContent=fmt(total);byId('target-out').textContent=fmt(total)+' ciclos';
+      byId('calc-status').textContent=total?`A equipe pode assumir até ${fmt(total)} compromissos aceitos. Registre também as ofertas recusadas ou sem resposta, sem incluí-las no denominador dos ciclos.`:'Informe a capacidade de pelo menos uma frente para construir a carteira.';
+    }
+    ['weeks','bath','factory','traffic'].forEach(id=>byId(id).addEventListener('input',updateCalculator));updateCalculator();
+    const links=[...document.querySelectorAll('.sidebar nav a')];
+    const sections=[...document.querySelectorAll('main section[id]')];
+    const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!visible)return;links.forEach(a=>a.removeAttribute('aria-current'));const link=links.find(a=>a.getAttribute('href')==='#'+visible.target.id);if(link)link.setAttribute('aria-current','location')},{rootMargin:'-15% 0px -70% 0px',threshold:[0,.2,.5]});
+    sections.forEach(s=>observer.observe(s));
+  </script>
+</body>
+</html>
